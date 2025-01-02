@@ -3,6 +3,5 @@
 <template>
   <main>
     <MyHeader />
-    <TheWelcome />
   </main>
 </template>
