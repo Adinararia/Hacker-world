@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Violet Background</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <span class="numbers left">123</span>
+      <h1>Привет, мир!</h1>
+      <span class="numbers right">456</span>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #5d2d6e; /* Темно-фиолетовый фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+
+  .container {
+    text-align: center;
+    position: relative;
+  }
+
+  .numbers {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .left {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+</style>

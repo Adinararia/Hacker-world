@@ -1,7 +1,5 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main>
-    <MyHeader />
-  </main>
+  <main>Hi</main>
 </template>
