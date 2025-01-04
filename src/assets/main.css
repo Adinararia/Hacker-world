@@ -1,13 +1,12 @@
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
 }
 body {
   max-width: 100%;
   max-height: 100%;
-  background-color: #000000;
+  /* background-color: #000000; */
   background-image: url('images/9419a8a4-8268-4e4d-a1eb-8e263819d52e.webp');
   background-repeat: no-repeat;
   background-size: cover; /* или 'contain', в зависимости от того, как хотите, чтобы картинка заполняла пространство */
@@ -39,7 +38,7 @@ a,
     background-color: hsla(295, 88%, 26%, 0.2);
   }
 }
-
+/* 
 @media (min-width: 1024px) {
   body {
     display: flex;
@@ -51,7 +50,7 @@ a,
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-}
+} */
 
 footer {
   position: fixed;
@@ -63,10 +62,8 @@ footer {
   min-height: 50px; /* Устанавливает минимальную высоту */
   /* background: linear-gradient(0.2deg, black, rgb(15, 112, 15) 50%, black); */
   background: linear-gradient(rgb(23, 23, 27), rgb(12, 10, 10));
-
-  background-color: #000000;
-  z-index: 100;
-  opacity: 90%;
+  opacity: 94%;
+  border-radius: 20px 20px 0 0;
 }
 
 .footer-container {
