@@ -2,6 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   font-weight: normal;
+  color: #e2dbdb;
 }
 body {
   max-width: 100%;
@@ -28,7 +29,6 @@ body::before {
 a,
 .green {
   text-decoration: none;
-  color: rgb(41, 11, 21);
   transition: 0.4s;
   padding: 3px;
 }

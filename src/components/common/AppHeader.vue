@@ -6,9 +6,10 @@
           <img :src="userDataTelegram?.photo_url" />
           <!-- <img src="../icons/wallet.svg" /> -->
         </div>
-        <span>
+        <div>
           {{ userDataTelegram?.first_name + ' ' + userDataTelegram?.last_name }}
-        </span>
+        </div>
+        <div class="header-score">1000 $HACKS</div>
       </div>
     </div>
   </header>
@@ -33,7 +34,7 @@ const userDataTelegram = getUserData()
   background: linear-gradient(rgb(23, 23, 27), rgb(12, 10, 10));
 }
 .header-info {
-  align-items: center; /* Вертикальное выравнивание контента */
+  align-items: space; /* Вертикальное выравнивание контента */
   display: flex;
   flex-direction: row-reverse;
 }
@@ -54,5 +55,8 @@ const userDataTelegram = getUserData()
   height: 100%; /* Изображение будет растягиваться по высоте контейнера */
   object-fit: contain; /* Изображение будет заполненно, чтобы заполнить контейнер */
   image-rendering: optimizeQuality; /* для улучшения */
+}
+.header-score {
+  align-content: flex-end;
 }
 </style>
