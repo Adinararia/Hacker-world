@@ -53,6 +53,6 @@ const userDataTelegram = getUserData()
   width: 100%; /* Изображение будет растягиваться по ширине контейнера */
   height: 100%; /* Изображение будет растягиваться по высоте контейнера */
   object-fit: contain; /* Изображение будет заполненно, чтобы заполнить контейнер */
-  image-rendering: optimizeQuality; /* для улучшения качества */
+  image-rendering: optimizeQuality; /* для улучшения */
 }
 </style>
