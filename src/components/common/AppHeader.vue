@@ -1,15 +1,13 @@
 <template>
   <header>
     <div class="header-container">
+      <div class="header-score">1000 $HACKS</div>
       <div class="header-info">
+        {{ userDataTelegram?.first_name + ' ' + userDataTelegram?.last_name }}
         <div class="header-img">
           <img :src="userDataTelegram?.photo_url" />
           <!-- <img src="../icons/wallet.svg" /> -->
         </div>
-        <div>
-          {{ userDataTelegram?.first_name + ' ' + userDataTelegram?.last_name }}
-        </div>
-        <div class="header-score">1000 $HACKS</div>
       </div>
     </div>
   </header>
@@ -25,7 +23,7 @@ const userDataTelegram = getUserData()
 .header-container {
   border-radius: 200px;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: center; /* Вертикальное выравнивание контента */
   color: #e2dbdb;
   height: 50px;
@@ -34,9 +32,11 @@ const userDataTelegram = getUserData()
   background: linear-gradient(rgb(23, 23, 27), rgb(12, 10, 10));
 }
 .header-info {
-  align-items: space; /* Вертикальное выравнивание контента */
+  align-items: center; /* Вертикальное выравнивание контента */
   display: flex;
-  flex-direction: row-reverse;
+  justify-items: flex-end;
+  gap: 10px;
+  margin-left: auto;
 }
 
 .header-img {
@@ -57,6 +57,6 @@ const userDataTelegram = getUserData()
   image-rendering: optimizeQuality; /* для улучшения */
 }
 .header-score {
-  align-content: flex-end;
+  margin-left: 5%;
 }
 </style>
