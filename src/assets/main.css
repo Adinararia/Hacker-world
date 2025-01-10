@@ -60,6 +60,7 @@ footer {
   background-color: #000000;
   padding: 10px 0;
   min-height: 50px; /* Устанавливает минимальную высоту */
+  height: 4.5vh;
   /* background: linear-gradient(0.2deg, black, rgb(15, 112, 15) 50%, black); */
   background: linear-gradient(rgb(23, 23, 27), rgb(12, 10, 10));
   opacity: 94%;

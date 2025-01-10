@@ -6,7 +6,6 @@
         {{ userDataTelegram?.first_name + ' ' + userDataTelegram?.last_name }}
         <div class="header-img">
           <img :src="userDataTelegram?.photo_url" />
-          <!-- <img src="../icons/wallet.svg" /> -->
         </div>
       </div>
     </div>
@@ -26,8 +25,9 @@ const userDataTelegram = getUserData()
   flex-direction: row;
   align-items: center; /* Вертикальное выравнивание контента */
   color: #e2dbdb;
-  height: 50px;
-  margin-top: 20px;
+  height: 5vh;
+  margin-top: var(--header-margin-top-height);
+  margin-top: 1.5vh;
   opacity: 94%;
   background: linear-gradient(rgb(23, 23, 27), rgb(12, 10, 10));
 }
