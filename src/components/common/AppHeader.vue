@@ -25,9 +25,8 @@ const userDataTelegram = getUserData()
   flex-direction: row;
   align-items: center; /* Вертикальное выравнивание контента */
   color: #e2dbdb;
-  height: 5vh;
+  height: var(--header-height);
   margin-top: var(--header-margin-top-height);
-  margin-top: 1.5vh;
   opacity: 94%;
   background: linear-gradient(rgb(23, 23, 27), rgb(12, 10, 10));
 }
