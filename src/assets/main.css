@@ -13,6 +13,7 @@ body {
   background-size: cover; /* или 'contain', в зависимости от того, как хотите, чтобы картинка заполняла пространство */
   background-position: center; /* Центрирует картинку */
   background-attachment: fixed; /* Оставляет фон фиксированным при прокрутке */
+  overflow: hidden;
 }
 
 body::before {
