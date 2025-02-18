@@ -2,7 +2,6 @@
   <main>
     <div class="container">
       <div id="connect-wallet"></div>
-      Закончить с css, переменные, и body должен быть 100%, зафиксировать экран
     </div>
   </main>
 </template>
@@ -18,13 +17,19 @@
 }
 </style>
 <script setup lang="ts">
-import { onMounted } from 'vue'
-import { THEME, TonConnectUI } from '@tonconnect/ui'
-onMounted(() => {
-  const tonConnectUI = new TonConnectUI({
-    manifestUrl: 'https://adinararia.github.io/Hacker-world/manifest.json',
+import { onMounted, onUnmounted } from 'vue'
+import { tonConnectUI } from '@/services/TonConnectUiService'
+
+onMounted(async () => {
+  await tonConnectUI.connectionRestored
+  tonConnectUI.uiOptions = {
     buttonRootId: 'connect-wallet',
-  })
-  tonConnectUI.uiOptions = { language: 'ru', uiPreferences: { theme: THEME.DARK } }
+  }
+})
+
+onUnmounted(() => {
+  tonConnectUI.uiOptions = {
+    buttonRootId: null,
+  }
 })
 </script>
