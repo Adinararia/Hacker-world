@@ -19,7 +19,10 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
 import { tonConnectUI } from '@/services/TonConnectUiService'
+import { useTonServiceStorage } from '@/stores/TonServiceStorage'
 
+const tonServiceStorage = useTonServiceStorage()
+console.log(tonServiceStorage.tonBalance)
 onMounted(async () => {
   await tonConnectUI.connectionRestored
   tonConnectUI.uiOptions = {
